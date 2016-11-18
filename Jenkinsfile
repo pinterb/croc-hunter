@@ -1,12 +1,12 @@
 #!/usr/bin/groovy
 
 // load pipeline functions
-@Library('github.com/lachie83/jenkins-pipeline@master')
-def pipeline = new io.estrado.Pipeline()
+@Library('github.com/pinterb/jenkins-pipeline@master')
+def pipeline = new io.clusterops.Pipeline()
 
 node {
   def goPath = "/go"
-  def workDir = "${goPath}/src/github.com/lachie83/croc-hunter/"
+  def workDir = "${goPath}/src/github.com/pinterb/croc-hunter/"
   def pwd = pwd()
   def chart_dir = "${pwd}/charts/croc-hunter"
 
